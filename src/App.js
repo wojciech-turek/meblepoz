@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { AboutUs } from "./components/AboutUs/AboutUs";
+import { HeroBanner } from "./components/HeroBanner/HeroBanner";
+import { Navigation } from "./components/Navigation";
+import GlobalStyle from "./GlobalStyles";
+import "react-multi-carousel/lib/styles.css";
+import { HowWeWork } from "./components/HowWeWork/HowWeWork";
+import { Premium } from "./components/Premium/Premium";
+import { Contact } from "./components/Contact/Contact";
+import { Realizations2 } from "./components/Realizationsv2/Realizations";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GlobalStyle />
+      <Navigation />
+      <HeroBanner />
+      <AboutUs />
+      {/* <Realizations /> */}
+      <Realizations2 />
+      <HowWeWork />
+      <Premium />
+      <Contact />
     </div>
   );
 }
