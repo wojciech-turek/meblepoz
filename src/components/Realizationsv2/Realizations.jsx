@@ -168,7 +168,7 @@ const StyledPrevArrow = styled.button`
   }
 `;
 
-const NextArrow = ({ onClick }) => {
+export const NextArrow = ({ onClick }) => {
   return (
     <StyledArrow onClick={onClick}>
       <img src={nextArrow} alt="Next" />
@@ -176,7 +176,7 @@ const NextArrow = ({ onClick }) => {
   );
 };
 
-const PrevArrow = ({ onClick }) => {
+export const PrevArrow = ({ onClick }) => {
   return (
     <StyledPrevArrow onClick={onClick}>
       <img src={nextArrow} alt="Prev" />

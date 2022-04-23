@@ -36,6 +36,7 @@ import image22 from "../../assets/premium/22.jpg";
 import image23 from "../../assets/premium/23.jpg";
 import InfiniteCarousel from "react-leaf-carousel";
 import styled from "styled-components";
+import { NextArrow, PrevArrow } from "../Realizationsv2/Realizations";
 
 const CarouselWrapper = styled.div`
   margin: 48px 0 72px 0;
@@ -99,6 +100,8 @@ export const Premium = () => {
         sidesOpacity={0.5}
         sideSize={0.1}
         lazyLoad={true}
+        nextArrow={<NextArrow />}
+        prevArrow={<PrevArrow />}
         slidesToScroll={3}
         slidesToShow={3}
       >
